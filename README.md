@@ -51,9 +51,9 @@ Nous avons mis en place 3 DockerFiles permettant de créer les 3 images correspo
 Pour les créer et les publier, on utilise les commandes suivantes :
 
 ```bash
-docker build -t nanodeus/tacos-image -f tacos/
-docker build -t nanodeus/burger-image -f burger/
-docker build -t nanodeus/pizza-image -f pizza/
+docker build -t nanodeus/tacos-image tacos/
+docker build -t nanodeus/burger-image burger/
+docker build -t nanodeus/pizza-image pizza/
 docker push nanodeus/tacos-image
 docker push nanodeus/burger-image
 docker push nanodeus/pizza-image
@@ -76,3 +76,17 @@ On peut ensuite créer l'ingress qui va nous permettre d'accéder aux services.
 On applique la commande suivante :
 
 ![Alt text](/images/kubectlIngress.png?raw=true "4")
+
+Pour notre cas, il nous faut configurer le fichier hosts de notre machine pour pouvoir accéder aux services.
+
+On ajoute la ligne suivante :
+
+```bash
+127.0.0.1       burgerandtacos.eatsout.com mypizza.eatsout.com
+```
+
+On peut ensuite accéder aux services en utilisant curl :
+
+![Alt text](/images/curl.png?raw=true "5")
+
+## Question 6
