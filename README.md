@@ -41,3 +41,22 @@ kubectl get pods -n ingress-nginx
 Complétion du schéma :
 
 ![Alt text](/images/schema.png?raw=true "1")
+
+## Question 4
+
+Builder et publier sur le DockerHub :
+
+Nous avons mis en place 3 DockerFiles permettant de créer les 3 images correspondant.
+
+Pour les créer et les publier, on utilise les commandes suivantes :
+
+```bash
+docker build -t nanodeus/tacos-image -f tacos/
+docker build -t nanodeus/burger-image -f burger/
+docker build -t nanodeus/pizza-image -f pizza/
+docker push nanodeus/tacos-image
+docker push nanodeus/burger-image
+docker push nanodeus/pizza-image
+```
+
+## Question 5
