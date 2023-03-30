@@ -90,3 +90,23 @@ On peut ensuite accéder aux services en utilisant curl :
 ![Alt text](/images/curl.png?raw=true "5")
 
 ## Question 6
+
+Afin de pouvoir gérer une  charge plus importante, on peut utiliser la propriété replicas qui permet de créer plusieurs pods pour un même service.
+
+```yaml
+replicas: 3
+```
+
+Pour vérifier que les pods sont bien créés, on utilise la commande suivante :
+
+```bash
+kubectl get pods
+```
+
+On peut aussi utiliser un service de type LoadBalancer.
+
+```yaml
+type: LoadBalancer
+```
+
+Kubernetes créera automatiquement un équilibreur de charge pour votre Service
