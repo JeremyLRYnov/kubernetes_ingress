@@ -64,3 +64,15 @@ On peut retrouver nos images sur le DockerHub : <https://hub.docker.com/u/nanode
 ![Alt text](/images/dockerhub.png?raw=true "2")
 
 ## Question 5
+
+Pour l'exécution des déploiements et des services, on créait les fichiers yaml correspondants.
+
+Ensuite, on utilise les commandes suivantes :
+
+![Alt text](/images/kubectlApply.png?raw=true "3")
+
+On peut ensuite créer l'ingress qui va nous permettre d'accéder aux services.
+
+On applique la commande suivante :
+
+![Alt text](/images/kubectlIngress.png?raw=true "4")
