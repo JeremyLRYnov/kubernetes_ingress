@@ -59,4 +59,8 @@ docker push nanodeus/burger-image
 docker push nanodeus/pizza-image
 ```
 
+On peut retrouver nos images sur le DockerHub : <https://hub.docker.com/u/nanodeus>
+
+![Alt text](/images/dockerhub.png?raw=true "2")
+
 ## Question 5
