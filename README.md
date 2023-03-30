@@ -37,3 +37,7 @@ kubectl get pods -n ingress-nginx
 ```
 
 ## Question 3
+
+Complétion du schéma :
+
+![Alt text](/images/schema.png?raw=true "1")
