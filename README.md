@@ -40,7 +40,7 @@ kubectl get pods -n ingress-nginx
 
 Complétion du schéma :
 
-![Alt text](/images/schema.png?raw=true "1")
+![Alt text](images/schema.png?raw=true "1")
 
 ## Question 4
 
@@ -61,7 +61,7 @@ docker push nanodeus/pizza-image
 
 On peut retrouver nos images sur le DockerHub : <https://hub.docker.com/u/nanodeus>
 
-![Alt text](/images/dockerhub.png?raw=true "2")
+![Alt text](images/dockerhub.png?raw=true "2")
 
 ## Question 5
 
@@ -69,13 +69,13 @@ Pour l'exécution des déploiements et des services, on créait les fichiers yam
 
 Ensuite, on utilise les commandes suivantes :
 
-![Alt text](/images/kubectlApply.png?raw=true "3")
+![Alt text](images/kubectlApply.png?raw=true "3")
 
 On peut ensuite créer l'ingress qui va nous permettre d'accéder aux services.
 
 On applique la commande suivante :
 
-![Alt text](/images/kubectlIngress.png?raw=true "4")
+![Alt text](images/kubectlIngress.png?raw=true "4")
 
 Pour notre cas, il nous faut configurer le fichier hosts de notre machine pour pouvoir accéder aux services.
 
@@ -87,7 +87,7 @@ On ajoute la ligne suivante :
 
 On peut ensuite accéder aux services en utilisant curl :
 
-![Alt text](/images/curl.png?raw=true "5")
+![Alt text](images/curl.png?raw=true "5")
 
 ## Question 6
 
