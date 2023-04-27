@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: burger-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: burger
+  template:
+    metadata:
+      labels:
+        app: burger
+    spec:
+      containers:
+      - name: burger
+        image: nanodeus/burger-image
+        ports:
+        - containerPort: 80
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: burgers-service
+spec:
+  selector:
+    app: burger
+  ports:
+    - name: http
+      port: 80
+      targetPort: 80
+  type: ClusterIP
